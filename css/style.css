@@ -1,0 +1,270 @@
+video,img{
+		border:5px solid #eee;
+		-moz-border-radius: 15px;
+	    -webkit-border-radius: 15px;
+	    border-radius:15px;
+	}
+	div{
+		-moz-border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    border-radius:5px;
+	}
+	html,body{
+		overflow-x:hidden;
+	}
+		.home{
+			position:relative;
+			height:1000px;
+			/*background:url(img/01.jpg)no-repeat center 0px;*/
+		}
+		.img1011{
+			position:relative;
+			height:100%;
+			width:100%;
+		}
+		.div01{
+			position:absolute;
+			top:0px;
+			height:100%;
+			width:100%;
+			margin-top:0px;
+			margin-right:0px;
+			background:#333;
+			opacity:0.7;
+		}
+		.h1{
+			color:#fff;
+			font-size:100px;
+			font-style:italic;
+			position:absolute;
+			top:25%;
+			left:25%;
+		}
+		.p0112{
+			color:#fff;
+			font-size:30px;
+			font-style:italic;
+			position:absolute;
+			top:40%;
+			left:25%;
+		}
+		#fixed_header { 
+		position:fixed; 
+		z-index:1; 
+		top:0; 
+		width:100%; 
+		background-color:#ccc; 
+		} 
+		#navi { 
+		margin:0 auto; 
+		} 
+		li { 
+		list-style-type:none; 
+		display:inline; 
+		} 
+		li:nth-child(1){
+			position:relative;
+			left:20%;
+			font-size:2em;
+		}
+		li:nth-child(2){
+			position:relative;
+			left:30%;
+			font-size:2em;
+		}
+		li:nth-child(3){
+			position:relative;
+			left:40%;
+			font-size:2em;
+		}
+		li:nth-child(4){
+			position:relative;
+			left:50%;
+			font-size:2em;
+		}
+		#real_header { 
+		position:relative; 
+		width:100%; 
+		z-index:2; 
+		background-color:#ccc; 
+		} 
+		#entry { 
+		margin:0 auto; 
+		text-align:center; 
+		background-color:#fff; 
+		} 
+		.divimg{
+			position:relative;
+			top:50px;
+			left:50px;
+		}
+		.img001{
+			position:relative;
+		}
+		.img01{
+			height:100px;
+			width:125px;
+		}
+		#i1{
+			font-size:30px;
+			color:#aaa;
+			-webkit-transform: rotate(180deg);/*Safari 4+,Google Chrome 1+ */
+			-moz-transform: rotate(180deg);/*Firefox 3.5+*/
+		}
+		#i2{
+			font-size:30px;
+			color:#aaa;
+		}
+		#placeholder{
+			position:relative;
+			left:33px;
+			margin-bottom:4px;
+			height:400px;
+			width:510px;
+		}
+		.shou{
+			cursor:pointer;
+		}
+		.video{
+			position:relative;
+			top:50px;
+		}
+		.wsy11{
+			background:#eee;
+			margin:0px 30px 20px 40px;
+		}
+		.wsy12{
+			height:650px;
+			background:#eee;
+			margin:0px 30px 20px 40px;
+		}
+		.wsy001{
+			position:relative;
+			margin:10px 30px 0px 40px;
+		}
+		.wsy001 p:nth-child(1){
+			position:relative;
+			text-align:center;
+			color:#333;
+			font-size:2em;
+		}
+		.wsy001 p:nth-child(3),p:nth-child(4),p:nth-child(5){
+			position:relative;
+			color:#333;
+			font-size:1.3em;
+		}
+		.wsy001 img{
+			float:right;
+			top:0px;
+			right:0px;
+		}
+		.wsy001 p:nth-child(6){
+			position:relative;
+			color:#333;
+			font-size:1.3em;
+		}
+		.wsy002{
+			position:relative;
+			margin:0px 30px 0px 40px;
+			color:#333;
+			font-size:2.3em;
+			font-style:italic;
+		}
+
+		.js{
+			color:#333;
+			font-size:2em;
+			margin-top:100px;
+			margin-left:40px;
+		}
+		.jk13 img{
+			height:300px;
+			width:100%;
+		}
+		.pjk{
+			position:relative;
+			top:-30px;
+			color:#fff;
+			font-size:1.5em;
+			background-color:#888888;
+			opacity:0.7;
+		}
+
+		.tx1{
+			margin:20px 10px 10px 0px;
+			height:260px;
+			width:275px;
+/*			z-index:-1;*/
+		}
+		#to_top{font:14px/20px arial; position:absolute; cursor:pointer;}
+		#to_top img{
+			position:relative;
+			bottom:10%;
+			height:40px;
+			width:30px;
+		}
+		.fd{
+			position:fixed;
+			top:0px;
+			right:0px;
+			color:#fff;
+			background-color:#eee;
+/*			opacity:0.7;*/
+			z-index:2;
+		}
+		.rd{
+			position:fixed;
+			top:0px;
+			left:0px;
+			color:#fff;
+			background-color:#eee;
+/*			opacity:0.7;*/
+			z-index:2;
+		}
+		#zzc{
+			position:absolute;
+		}
+		/*.by102{
+			margin
+		}*/
+		.by1{
+			position:absolute;
+			margin:40px 0px 10px 0px;
+			height:260px;
+			width:280px;
+			z-index:1;
+		}
+		/*#by1 img:nth-child(1){
+			position:relative;
+			margin-left:3%;
+			height:260px;
+			width:280px;
+			z-index:1;
+		}
+		#by1 img:nth-child(2){
+			position:relative;
+			margin-left:3%;
+			height:260px;
+			width:280px;
+			z-index:1;
+		}*/
+		.by11011{
+			position:absolute;
+			margin:20px 10px 10px 0px;
+			height:260px;
+			width:280px;
+			z-index:1;
+		}
+		.byj011{
+			position:absolute;
+			left:3%;
+		}
+		.bywz001{
+			position:relative;
+		}
+		.wsy003{
+			position:relative;
+			margin:0px 30px 0px 40px;
+			color:#333;
+			font-size:1.3em;
+		}

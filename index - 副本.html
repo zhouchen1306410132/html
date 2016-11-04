@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的大学</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<script src="js/script.js"></script>
+	<script src="js/script1.js"></script>
+	<script src="js/script2.js"></script>
+	<style>
+	video,img{
+		border:5px solid #eee;
+		-moz-border-radius: 15px;
+	    -webkit-border-radius: 15px;
+	    border-radius:15px;
+	}
+	div{
+		-moz-border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    border-radius:5px;
+	}
+	html,body{
+		overflow-x:hidden;
+	}
+		.home{
+			position:relative;
+			height:1000px;
+			/*background:url(img/01.jpg)no-repeat center 0px;*/
+		}
+		.img1011{
+			position:relative;
+			height:100%;
+			width:100%;
+		}
+		.div01{
+			position:absolute;
+			top:0px;
+			height:100%;
+			width:100%;
+			margin-top:0px;
+			margin-right:0px;
+			background:#333;
+			opacity:0.7;
+		}
+		.h1{
+			color:#fff;
+			font-size:100px;
+			font-style:italic;
+			position:absolute;
+			top:25%;
+			left:25%;
+		}
+		.p0112{
+			color:#fff;
+			font-size:30px;
+			font-style:italic;
+			position:absolute;
+			top:40%;
+			left:25%;
+		}
+		#fixed_header { 
+		position:fixed; 
+		z-index:1; 
+		top:0; 
+		width:100%; 
+		background-color:#ccc; 
+		} 
+		#navi { 
+		margin:0 auto; 
+		} 
+		li { 
+		list-style-type:none; 
+		display:inline; 
+		} 
+		li:nth-child(1){
+			position:relative;
+			left:20%;
+			font-size:2em;
+		}
+		li:nth-child(2){
+			position:relative;
+			left:30%;
+			font-size:2em;
+		}
+		li:nth-child(3){
+			position:relative;
+			left:40%;
+			font-size:2em;
+		}
+		li:nth-child(4){
+			position:relative;
+			left:50%;
+			font-size:2em;
+		}
+		#real_header { 
+		position:relative; 
+		width:100%; 
+		z-index:2; 
+		background-color:#ccc; 
+		} 
+		#entry { 
+		margin:0 auto; 
+		text-align:center; 
+		background-color:#fff; 
+		} 
+		.divimg{
+			position:relative;
+			top:50px;
+			left:50px;
+		}
+		.img001{
+			position:relative;
+		}
+		.img01{
+			height:100px;
+			width:125px;
+		}
+		#i1{
+			font-size:30px;
+			color:#aaa;
+			-webkit-transform: rotate(180deg);/*Safari 4+,Google Chrome 1+ */
+			-moz-transform: rotate(180deg);/*Firefox 3.5+*/
+		}
+		#i2{
+			font-size:30px;
+			color:#aaa;
+		}
+		#placeholder{
+			position:relative;
+			left:33px;
+			margin-bottom:4px;
+			height:400px;
+			width:510px;
+		}
+		.shou{
+			cursor:pointer;
+		}
+		.video{
+			position:relative;
+			top:50px;
+		}
+		.wsy11{
+			background:#eee;
+			margin:0px 30px 20px 40px;
+		}
+		.wsy12{
+			height:650px;
+			background:#eee;
+			margin:0px 30px 20px 40px;
+		}
+		.wsy001{
+			position:relative;
+			margin:10px 30px 0px 40px;
+		}
+		.wsy001 p:nth-child(1){
+			position:relative;
+			text-align:center;
+			color:#333;
+			font-size:2em;
+		}
+		.wsy001 p:nth-child(3),p:nth-child(4),p:nth-child(5){
+			position:relative;
+			color:#333;
+			font-size:1.3em;
+		}
+		.wsy001 img{
+			float:right;
+			top:0px;
+			right:0px;
+		}
+		.wsy001 p:nth-child(6){
+			position:relative;
+			color:#333;
+			font-size:1.3em;
+		}
+		.wsy002{
+			position:relative;
+			margin:0px 30px 0px 40px;
+			color:#333;
+			font-size:2.3em;
+			font-style:italic;
+		}
+
+		.js{
+			color:#333;
+			font-size:2em;
+			margin-top:100px;
+			margin-left:40px;
+		}
+		.jk13 img{
+			height:300px;
+			width:100%;
+		}
+		.pjk{
+			position:relative;
+			top:-30px;
+			color:#fff;
+			font-size:1.5em;
+			background-color:#888888;
+			opacity:0.7;
+		}
+
+		.tx1{
+			margin:20px 10px 10px 0px;
+			height:260px;
+			width:275px;
+/*			z-index:-1;*/
+		}
+		#to_top{font:14px/20px arial; position:absolute; cursor:pointer;}
+		#to_top img{
+			position:relative;
+			bottom:10%;
+			height:40px;
+			width:30px;
+		}
+		.fd{
+			position:fixed;
+			top:0px;
+			right:0px;
+			color:#fff;
+			background-color:#eee;
+/*			opacity:0.7;*/
+			z-index:2;
+		}
+		.rd{
+			position:fixed;
+			top:0px;
+			left:0px;
+			color:#fff;
+			background-color:#eee;
+/*			opacity:0.7;*/
+			z-index:2;
+		}
+		#zzc{
+			position:absolute;
+		}
+		/*.by102{
+			margin
+		}*/
+		.by1{
+			position:absolute;
+			margin:40px 0px 10px 0px;
+			height:260px;
+			width:280px;
+			z-index:1;
+		}
+		/*#by1 img:nth-child(1){
+			position:relative;
+			margin-left:3%;
+			height:260px;
+			width:280px;
+			z-index:1;
+		}
+		#by1 img:nth-child(2){
+			position:relative;
+			margin-left:3%;
+			height:260px;
+			width:280px;
+			z-index:1;
+		}*/
+		.by11011{
+			position:absolute;
+			margin:20px 10px 10px 0px;
+			height:260px;
+			width:280px;
+			z-index:1;
+		}
+		.byj011{
+			position:absolute;
+			left:3%;
+		}
+		.bywz001{
+			position:relative;
+		}
+		.wsy003{
+			position:relative;
+			margin:0px 30px 0px 40px;
+			color:#333;
+			font-size:1.3em;
+		}
+</style>
+</head>
+<body>
+	<div class="page">
+		<header>
+		</header>
+		<div>
+			<main>
+				<div id="fixed_header"> 
+					<div id="navi"> 
+						<ul> 
+							<li><a href="#wsy">武生院简介</a></li> 
+							<li><a href="#tp01">武生院之景</a></li> 
+							<li><a href="#txxce">同学相册</a></li> 
+							<li><a href="#byj">毕业季</a></li> 
+						</ul> 
+					</div> 
+				</div> 
+				<div id="real_header"> 
+				<div id="entry"> 
+
+					<div class="home">
+						<img class="img1011" src="img/01.jpg" >
+								<div class="div01">
+								</div>
+								<h1 class="h1">我的大学</h1>
+								<h2 class="p0112">大学四年，转眼过去，如今想起仿佛昨日才踏进大武生！</h2>
+					</div>
+				<p>即将毕业，发一些这几年来拍的照片，以此缅怀即将逝去的大学～</p> 
+				</div> 
+				<div id="navi"> 
+				<ul> 
+						<li><a href="#wsy">武生院简介</a></li> 
+						<li><a href="#tp01">武生院之景</a></li> 
+						<li><a href="#txxce">同学相册</a></li> 
+						<li><a href="#byj">毕业季</a></li> 
+				</ul> 
+				</div> 
+				</div> 
+				<div id="to_top"><img src="img/13jk/110.png"><div style="height:100px"></div></div>
+				<script>
+					 function topimg(){
+					  var oTop = document.getElementById("to_top");
+					  var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+					  var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+					  oTop.style.left = screenw - oTop.offsetWidth +"px";
+					  oTop.style.top = screenh - oTop.offsetHeight + "px";
+					  window.onscroll = function(){
+					    var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+					    oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
+					  }
+					  oTop.onclick = function(){
+					    document.documentElement.scrollTop = document.body.scrollTop =0;
+					  }
+					}  
+
+						function addLoadEvent(func) {
+						  var oldonload = window.onload;
+						  if (typeof window.onload != 'function') {
+						    window.onload = func;
+						  } else {
+						    window.onload = function() {
+						      oldonload();
+						      func();
+						    }
+						  }
+						}
+
+					addLoadEvent(topimg);
+					</script>
+				<div class="wsy11" id="wsy">
+					<div class="wsy001">
+						<p>武汉生物工程学院</p>
+						<img src="img/100.jpg">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;武汉生物工程学院位于湖北省武汉市，是中国第一所生物工程类普通本科高等院校，同时也是湖北省第一所获得学士学位授予权、顺利通过国家教育部本科教学工作合格评估的民办高校。</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;武汉生物工程学院的前身是创办于1993年的武汉生物工程学校，2000年升格为普通高等学校——武汉生物工程职业技术学院，2005年再次升格为普通本科高校，并更名为武汉生物工程学院。</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据2015年7月学校官网显示，武汉生物工程学院占地面积约1762亩，建筑面积75万平方米，有专任教师1100余人，设有生命科学与技术学院、食品工程系、药学院、化学与环境工程系、园林系、计算机与信息工程系、管理学院等15个学院（系、部），开办67个普通本、专科专业，全日制在校生2万余人。根据2015年7月学校官网显示，武汉生物工程学院设有生命科学与技术学院、食品工程系、药学院、化学与环境工程系、园林系、计算机与信息工程系、管理学院、外国语学院、艺术系、体育系、建筑工程学院、机械与电子工程学院、思想政治理论课部、数学课部、继续教育学院等15个学院（系、部），开办37个本科专业和30个专科专业。</p>
+						
+						<pre>创办时间 1993年						创办时间 1993年</pre>
+						<pre>所属地区 湖北省武汉市					类别 民办高校</pre>
+						<pre>学校类型 理工						学校官网http://www.whsw.net</pre>
+						<pre>属性 全日制普通本科高校					学校代码 12362</pre>
+					</div>
+					<div class="wsy003">
+					<p>　<strong>&nbsp;&nbsp;&nbsp;&nbsp;学校是在著名科学家钱学森院士的亲切关怀和指导下创办发展起来的。</strong>1994年春，钱学森院士先后两次亲笔致信学校创办者，热情称赞“学校为即将到来的第六次产业革命培养人才，真是件大好事”。自建校以来，始终坚持社会主义办学方向和公益性办学原则，牢记“立校为公、办学为民、依法治校、回报社会”的办学宗旨，大力弘扬延安精神和钱学森精神，努力改善办学条件，不断加强内涵建设，教育教学质量和办学水平显著提升，实现了全面、协调和可持续发展。<br>
+　　<strong>学校以理工学科为主体</strong>学校以理工学科为主体，以生命科学为特色，涵盖理、工、农、文、管、教、艺等7个学科门类。设有生命科学与技术学院、药学院、管理学院、机械与电子工程学院、建筑工程学院、外国语学院、化学与环境工程系、食品工程系、园林系、计算机与信息工程系、艺术系、体育系、思想政治理论课部、文化素质教育中心、创业学院等15个院（系、部、中心），现有50余个本专科专业面向全国招生。经省政府学位办批准，2015年学校与华中农业大学、湖北工业大学联合招收培养专业学位硕士研究生。<br>
+　　<strong>学校坚定走办应用型大学</strong>学校坚定走办应用型大学、培养高素质应用型人才的发展道路。积极探索“产教融合、校企合作”的人才培养模式，始终以区域经济社会需求为导向，积极构建与区域战略性新兴产业、支柱产业、重点产业对接的专业集群。先后与九州通医药集团、健民药业集团股份有限公司、马应龙药业集团、武汉市仟吉食品有限公司等省内外一大批知名企业签订战略合作协议，共建校内外实习实训基地以及大学生创业（孵化）基地130余个，先后开办了“钱学森实验班”、“九州通班”、“战略性新兴（支柱）产业班”等近20类特色班和实验班，为建设应用型大学、培养高素质应用型人才奠定了坚实基础。<br>
+　　<strong>学校名师才俊荟萃，高层次人才居全国同类高校前列。</strong>现有教师1100余人，其中教授、副教授近300人，具有博士、硕士研究生学历教师占75%，在职博士教师团队近100人；有“楚天学者”2人，全国优秀教师1人，湖北省优秀教师2人，武汉市优秀教师4人。先后特聘“全国道德模范”吴天祥、“全国教书育人楷模”汪金权、全国著名党史专家石仲泉等担任“大学生人生导师”。<br>
+　　<strong>学校不断深化教育教学改革</strong>，人才培养质量居全省同类高校前列。现有国家级大学生校外实践教育基地1个，“十三五”省属高校优势特色学科群1个，省级重点学科1个、重点实验教学示范中心1个、工程技术研究中心1个、“专业综合改革试点”项目3项、“楚天学者”设岗学科1个，省级品牌专业1个、精品课程、精品资源共享课和精品视频公开课11门、战略性新兴（支柱）产业人才培养计划5项；截至目前，学校共承担国家自然科学基金项目15项，项目总数在全国民办本科高校中名列前茅。近年来，还承担了近600项面向区域产业发展及社会企业生产需求的科研、教研课题，先后发表学术论文2200余篇，获得省市级科技与教学成果奖30余项；学校高度重视大学生就业创业工作，先后荣获首批“全国高校实践育人创新创业基地”，湖北省首批“大学生创业示范基地”、“大学生创业孵化示范基地”，“‘就业湖北’先进高校”。</p>
+					</div>
+
+				</div>
+				<div class="wsy12">
+					<div class="js">武生院之景</div>
+				<div class="row">
+
+					<div class="col-md-6 col-sm-8" id="tp01">
+						<div class="divimg">
+
+							<div class="img001">
+							<img src="img/1.jpg" id="placeholder">
+							</div>
+
+							<div id="imagegallery">
+								<span class="shou">
+									<i class="glyphicon glyphicon-play" id="i1"></i>
+								</span>
+								<a href="img/1.jpg" id="a001"><img src="img/1.jpg"  id="showtp1"	class="img01"></a>
+								<a href="img/2.jpg" ><img src="img/2.jpg"  class="img01"></a>
+								<a href="img/3.jpg" ><img src="img/3.jpg"  class="img01"></a>
+								<a href="img/4.jpg" ><img src="img/4.jpg" id="showtp4" class="img01"></a>
+								<span class="shou">
+									<i class="glyphicon glyphicon-play" id="i2" ></i>
+								</span>
+							</div>
+							
+						</div>
+
+					</div>
+					<div class="col-md-5 col-sm-4">
+						<div class="video">
+							<p>武汉生物工程学院之最美风景</p>
+							<div class="video-wrapper">
+						  	<video id="movie" controls style="height:100%;width:100%;">
+						    <source src="video/001.mp4" />
+						 	</video>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			
+				</div>
+				<div style="height:120px"></div>
+				<div class="wsy11" id="txxce">
+					<div>
+						<p class="wsy002">丹姐和她的宝贝</p>
+						<div class="row jk13" id="jk001">
+							<div class="col-md-4"><img src="img/13jk/12.jpg"  onMouseMove='showhidediv("msg")'><p  class="pjk" id="msg" style="visibility:hidden;">丹姐和她的宝贝</p></div>
+							<div class="col-md-4"><img src="img/13jk/10.jpg"  onMouseMove='showhidediv("msg1")'> <p  class="pjk" id="msg1" style="visibility:hidden;">丹姐和她的宝贝</p></div>
+							<div class="col-md-4"><img src="img/13jk/11.jpg"  onMouseMove='showhidediv("msg2")'><p  class="pjk" id="msg2" style="visibility:hidden;">丹姐和她的宝贝</p></div>
+						</div>	
+							<script>
+								function showhidediv(id){  
+									var sbtitle=document.getElementById(id);  
+									if(sbtitle){  
+									   if(sbtitle.style.visibility=='visible'){  
+									   sbtitle.style.visibility='hidden';  
+									   }else{  
+									   sbtitle.style.visibility='visible';  
+									   }  
+									}  
+									}  
+							</script>
+					</div>
+					<div><img src="#" class="fd" id="zpfd" style="visibility:hidden;"></div>
+					<div><img src="#" class="rd" id="zprd" style="visibility:hidden;"></div>
+					<div id="zzc"> 
+					<p class="wsy002">13级计科(1)班同学相册</p>
+					<script type="text/javascript">
+						function normalImg(x,id){
+							var src=x.getAttribute("src");
+									var sbtitle1=document.getElementById(id); 
+									   		sbtitle1.style.visibility='hidden';
+									   		zzc.style.backgroundColor="";
+								  			zzc.style.opacity=1;
+						}
+
+						function bigImg(x,id){  
+									var src=x.getAttribute("src");
+									var sbtitle1=document.getElementById(id);  
+									   		sbtitle1.style.visibility='visible';
+								  			var zpfd=document.getElementById("zpfd");
+								  			zpfd.setAttribute("src",src);
+
+								  			var zzc=document.getElementById("zzc");
+								  			zzc.style.backgroundColor="#eee";
+								  			zzc.style.opacity=0.7;
+									}  
+						function normalImg1(x,id){
+							var src=x.getAttribute("src");
+									var sbtitle1=document.getElementById(id); 
+									   		sbtitle1.style.visibility='hidden';
+									   		zzc.style.backgroundColor="";
+								  			zzc.style.opacity=1;
+						}
+
+						function bigImg1(x,id){  
+									var src=x.getAttribute("src");
+									var sbtitle1=document.getElementById(id);  
+									   		sbtitle1.style.visibility='visible';
+									
+								  			var zprd=document.getElementById("zprd");
+								  			zprd.setAttribute("src",src);
+								  			zzc.style.backgroundColor="#eee";
+								  			zzc.style.opacity=0.7;
+									}  				
+					</script>
+					<div class="tx" id="tx">
+						<div class="row">
+						<div class="col-md-3"><img src="img/13jk/1.jpg" class="tx1"  onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<!-- onmouseout="normalImg(this)" onMouseMove='bigImg1("zpfd")' onmousemove="bigImg(this)"-->
+						<div class="col-md-3"><img src="img/13jk/2.jpg" class="tx1" onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/3.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						<div class="col-md-3"><img src="img/13jk/4.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						</div>
+					</div>
+					<div class="tx">
+						<div class="row">
+						<div class="col-md-3"><img src="img/13jk/9.jpg" class="tx1"  onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/13.jpg" class="tx1" onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/14.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						<div class="col-md-3"><img src="img/13jk/16.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						</div>
+					</div>
+					<div class="tx">
+						<div class="row">
+						<div class="col-md-3"><img src="img/13jk/17.jpg" class="tx1" onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/18.jpg" class="tx1" onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/19.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						<div class="col-md-3"><img src="img/13jk/20.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						</div>
+					</div>
+					<div class="tx">
+						<div class="row">
+						<div class="col-md-3"><img src="img/13jk/21.jpg" class="tx1" onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/22.jpg" class="tx1" onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/23.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						<div class="col-md-3"><img src="img/13jk/24.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						</div>
+					</div>
+					<div class="tx">
+						<div class="row">
+						<div class="col-md-3"><img src="img/13jk/25.jpg" class="tx1" onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/26.jpg" class="tx1" onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/27.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						<div class="col-md-3"><img src="img/13jk/28.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						</div>
+					</div>
+					<!-- <div class="tx">
+						<div class="tx">
+						<div class="row">
+						<div class="col-md-3"><img src="img/13jk/25.jpg" class="tx1" onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/26.jpg" class="tx1" onmousemove='bigImg(this,"zpfd")' onmouseout='normalImg(this,"zpfd")'></div>
+						<div class="col-md-3"><img src="img/13jk/27.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						<div class="col-md-3"><img src="img/13jk/28.jpg" class="tx1" onmousemove='bigImg1(this,"zprd")' onmouseout='normalImg1(this,"zprd")'></div>
+						</div>
+					</div>
+					</div> -->
+					</div>
+				</div>
+				<div style="height:1500px;"></div>
+				<div id="byj" class="byj011">
+					<div style="height:50px"></div>
+					<p class="wsy002">毕业季</p>
+					<div>
+						<div>
+						<script type="text/javascript">
+							function normalImg2(x,id1,id2,id3,id4,id5,id6,id7){
+								// x.style.height="260px";
+								// x.style.width="280px";
+								x.style.zIndex="1";
+								var sbtitle1=document.getElementById(id1);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id2);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id3);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id4);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id5);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id6);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id7);  
+									   	sbtitle1.style.zIndex='1';
+						}
+
+						function bigImg2(x,id1,id2,id3,id4,id5,id6,id7){  
+									// x.style.height="280px";
+									// x.style.width="400px";
+									// var tphd=document.getElementById("by11").getElementsByTagName("img");
+									// tphd.style.zIndex="2";
+									x.style.zIndex="99";
+									var sbtitle1=document.getElementById(id1);  
+									   	sbtitle1.style.zIndex='11';
+									var sbtitle1=document.getElementById(id2);  
+									   	sbtitle1.style.zIndex='10';
+									var sbtitle1=document.getElementById(id3);  
+									   	sbtitle1.style.zIndex='9';
+									var sbtitle1=document.getElementById(id4);  
+									   	sbtitle1.style.zIndex='8';
+									var sbtitle1=document.getElementById(id5);  
+									   	sbtitle1.style.zIndex='7';
+									var sbtitle1=document.getElementById(id6);  
+									   	sbtitle1.style.zIndex='6';
+									var sbtitle1=document.getElementById(id7);  
+									   	sbtitle1.style.zIndex='5';
+									
+									} 
+						</script>
+						<div class="row" id="by11">
+						<div class="col-md-1 by102"><img src="img/13jk/byj/0.jpg" id="hd1" class="by1" onmousemove='bigImg2(this,"hd2","hd3","hd4","hd5","hd6","hd7","hd8")' onmouseout='normalImg2(this,"hd2","hd3","hd4","hd5","hd6","hd7","hd8")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/1.jpg" id="hd2" class="by1" onmousemove='bigImg2(this,"hd3","hd4","hd5","hd6","hd7","hd8")' onmouseout='normalImg2(this,"hd3","hd4","hd5","hd6","hd7","hd8")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/16.jpg" id="hd3" class="by1" onmousemove='bigImg2(this,"hd4","hd5","hd6","hd7","hd8")' onmouseout='normalImg2(this,"hd4","hd5","hd6","hd7","hd8")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/3.jpg" id="hd4" class="by1" onmousemove='bigImg2(this,"hd5","hd6","hd7","hd8")' onmouseout='normalImg2(this,"hd5","hd6","hd7","hd8")'></div>
+
+						<div class="col-md-1 by102"><img src="img/13jk/byj/4.jpg" id="hd5" class="by1" onmousemove='bigImg2(this,"hd6","hd7","hd8")' onmouseout='normalImg2(this,"hd6","hd7","hd8")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/8.jpg" id="hd6" class="by1" onmousemove='bigImg2(this,"hd7","hd8")' onmouseout='normalImg2(this,"hd7","hd8")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/9.jpg" id="hd7" class="by1" onmousemove='bigImg2(this,"hd8")' onmouseout='normalImg2(this,"hd8")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/10.jpg" id="hd8" class="by1" onmousemove='bigImg2(this)' onmouseout='normalImg2(this)'></div>
+
+						<div class="col-md-1 by102"><img src="img/13jk/byj/11.jpg" id="hd9" class="by1" onmousemove='bigImg2(this)' onmouseout='normalImg2(this)'></div>
+						<!-- <div class="col-md-1 by102"><img src="img/13jk/byj/8.jpg" id="hd9" class="by1" onmousemove='bigImg2(this,"hd10","hd11")' onmouseout='normalImg2(this,"hd10","hd11")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/9.jpg" id="hd10" class="by1" onmousemove='bigImg2(this,"hd11")' onmouseout='normalImg2(this,"hd11")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/10.jpg" id="hd11" class="by1" onmousemove='bigImg2(this)' onmouseout='normalImg2(this)'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/11.jpg" id="hd12" class="by1" onmousemove='bigImg2(this)' onmouseout='normalImg2(this)'></div> -->
+
+						<!-- <div class="col-md-3 by102"><img src="img/13jk/byj/4.jpg" id="hd5" class="by1" onmousemove='bigImg2(this,"hd2","hd3")' onmouseout='normalImg2(this,"hd2","hd3")'></div>
+						<div class="col-md-3 by102"><img src="img/13jk/byj/5.jpg" id="hd6" class="by1" onmousemove='bigImg2(this,"hd3")' onmouseout='normalImg2(this,"hd2","hd3")'></div>
+						<div class="col-md-3 by102"><img src="img/13jk/byj/6.jpg" id="hd7" class="by1" onmousemove='bigImg2(this)' onmouseout='normalImg2(this)'></div>
+						<div class="col-md-3 by102"><img src="img/13jk/byj/7.jpg" id="hd8" class="by1" onmousemove='bigImg2(this)' onmouseout='normalImg2(this)'></div> -->
+						</div>
+					</div>
+					</div>
+					<div style="height:324px">
+					</div>
+					<div class="bywz001" style="background:#eee;margin-right:6%">
+						<p class="wsy003">毕业感言：展望未来</p>
+						<p class="wsy003">以前听过一个围脖上说：“所谓毕业就是活生生的从你的生命中抽掉一部分人，一部分事，然后再换上另一部分人和事。”现在越来越觉得这句话有道理。
+以前的我们，或许笑过，或许怨过；或许有过爱慕，或许有过讨厌；或许有过感动，或许有过小小的仇恨，但现在多么庆幸“我们毕业了！”我们的生命都是直线，就如此匆匆地相交而过，“是归人不是过客。”既然这样，还有什么放不下的呢？我喜欢有人提出的“选择性失忆”:那些欢笑，就让我们当成一笔财富慢慢的享用，慢慢的回味；那些难堪，不如就此忘记。不要自己给自己增加负重。那些不想回忆的人，把他们从通讯录上划掉，那些事，让我们用现时的和将来的欢笑代替。常听人说“时间是把杀猪刀，在容颜上刻下道道皱纹，令人唏嘘”。我只是想说:“时间是把杀猪刀，偷走了我的4年生活”</p>
+					</div>
+
+					<div>
+						<div>
+						<script type="text/javascript">
+							function normalImg3(x,id1,id2,id3,id4,id5,id6,id7){
+								// x.style.height="260px";
+								// x.style.width="280px";
+								x.style.zIndex="1";
+								var sbtitle1=document.getElementById(id1);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id2);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id3);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id4);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id5);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id6);  
+									   	sbtitle1.style.zIndex='1';
+									var sbtitle1=document.getElementById(id7);  
+									   	sbtitle1.style.zIndex='1';
+						}
+
+						function bigImg3(x,id1,id2,id3,id4,id5,id6,id7){  
+									// x.style.height="280px";
+									// x.style.width="400px";
+									// var tphd=document.getElementById("by11").getElementsByTagName("img");
+									// tphd.style.zIndex="2";
+									x.style.zIndex="99";
+									var sbtitle1=document.getElementById(id1);  
+									   	sbtitle1.style.zIndex='11';
+									var sbtitle1=document.getElementById(id2);  
+									   	sbtitle1.style.zIndex='10';
+									var sbtitle1=document.getElementById(id3);  
+									   	sbtitle1.style.zIndex='9';
+									var sbtitle1=document.getElementById(id4);  
+									   	sbtitle1.style.zIndex='8';
+									var sbtitle1=document.getElementById(id5);  
+									   	sbtitle1.style.zIndex='7';
+									var sbtitle1=document.getElementById(id6);  
+									   	sbtitle1.style.zIndex='6';
+									var sbtitle1=document.getElementById(id7);  
+									   	sbtitle1.style.zIndex='5';
+									
+									} 
+						</script>
+						<div class="row" id="by11">
+						<div class="col-md-1 by102"><img src="img/13jk/byj/20.jpg" id="hd01" class="by1" onmousemove='bigImg3(this,"hd02","hd03","hd04","hd05","hd06","hd07","hd08")' onmouseout='normalImg3(this,"hd02","hd03","hd04","hd05","hd06","hd07","hd08")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/13.jpg" id="hd02" class="by1" onmousemove='bigImg3(this,"hd03","hd04","hd05","hd06","hd07","hd08")' onmouseout='normalImg3(this,"hd03","hd04","hd05","hd06","hd07","hd08")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/14.jpg" id="hd03" class="by1" onmousemove='bigImg3(this,"hd04","hd05","hd06","hd07","hd08")' onmouseout='normalImg3(this,"hd04","hd05","hd06","hd07","hd08")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/15.jpg" id="hd04" class="by1" onmousemove='bigImg3(this,"hd05","hd06","hd07","hd08")' onmouseout='normalImg3(this,"hd05","hd06","hd07","hd08")'></div>
+
+						<div class="col-md-1 by102"><img src="img/13jk/byj/2.jpg" id="hd05" class="by1" onmousemove='bigImg3(this,"hd06","hd07","hd08")' onmouseout='normalImg3(this,"hd06","hd07","hd08")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/17.jpg" id="hd06" class="by1" onmousemove='bigImg3(this,"hd07","hd08")' onmouseout='normalImg3(this,"hd07","hd08")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/18.jpg" id="hd07" class="by1" onmousemove='bigImg3(this,"hd08")' onmouseout='normalImg3(this,"hd08")'></div>
+						<div class="col-md-1 by102"><img src="img/13jk/byj/19.jpg" id="hd08" class="by1" onmousemove='bigImg3(this)' onmouseout='normalImg3(this)'></div>
+
+						<div class="col-md-1 by102"><img src="img/13jk/byj/12.jpg" id="hd09" class="by1" onmousemove='bigImg3(this)' onmouseout='normalImg3(this)'></div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</main>
+			
+		</div>
+		<footer>
+		</footer>
+	</div>
+</body>
+</html>
